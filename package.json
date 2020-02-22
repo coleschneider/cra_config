@@ -8,8 +8,7 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.4.0",
     "@testing-library/user-event": "^7.2.1",
-    "@typescript-eslint/eslint-plugin": "^2.10.0",
-    "@typescript-eslint/parser": "^2.10.0",
+    "@typescript-eslint/parser": "^2.20.0",
     "babel-eslint": "10.0.3",
     "babel-jest": "^24.9.0",
     "babel-loader": "8.0.6",
@@ -20,13 +19,11 @@
     "css-loader": "3.4.2",
     "dotenv": "8.2.0",
     "dotenv-expand": "5.1.0",
-    "eslint": "^6.6.0",
     "eslint-config-react-app": "^5.2.0",
     "eslint-loader": "3.0.3",
     "eslint-plugin-flowtype": "4.6.0",
     "eslint-plugin-import": "2.20.0",
     "eslint-plugin-jsx-a11y": "6.2.3",
-    "eslint-plugin-react": "7.18.0",
     "eslint-plugin-react-hooks": "^1.6.1",
     "file-loader": "4.3.0",
     "fs-extra": "^8.1.0",
@@ -63,7 +60,7 @@
   },
   "scripts": {
     "start": "node scripts/start.js",
-    "lint": "eslint --fix .js",
+    "lint": "eslint --fix \"**/*.+(js|jsx)\"",
     "format": "prettier --write \"**/*.+(js|jsx|json|yml|yaml|css|md|vue)\"",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js"
@@ -136,8 +133,10 @@
     ]
   },
   "devDependencies": {
+    "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.10.0",
     "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-react": "^7.18.3",
     "prettier": "^1.19.1"
   }
 }
