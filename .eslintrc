@@ -3,7 +3,7 @@
     "browser": true,
     "es6": true
   },
-  "extends": ["plugin:react/recommended", "plugin:prettier/recommended"],
+  "extends": ["react-app", "plugin:prettier/recommended"],
   "globals": {
     "Atomics": "readonly",
     "SharedArrayBuffer": "readonly"
@@ -16,7 +16,10 @@
     "sourceType": "module"
   },
   "plugins": ["react"],
-  "rules": {},
+  "rules": {
+    "react/prop-types": 0,
+    "react-hooks/exhaustive-deps": 0
+  },
   "settings": {
     "react": {
       "version": "detect"
